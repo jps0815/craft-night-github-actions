@@ -4,14 +4,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
-    matrix:
-    node: [8, 10, 12]
+      matrix:
+        node: [8, 10, 12]
     steps:
       - name: checkout
         uses: actions/checkout@v2
       - name: print something
         run: ls
       - name: install
-        run: npm install -s jest npx
+        run: npm ci
       - name: run jest
         run: npx jest
