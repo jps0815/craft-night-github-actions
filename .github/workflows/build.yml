@@ -9,6 +9,6 @@ jobs:
       - name: print something
         run: ls
       - name: install
-        run: npm install -s jest npx
+        run: npm ci
       - name: run jest
         run: npx jest
